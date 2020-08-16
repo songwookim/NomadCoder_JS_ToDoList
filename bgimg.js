@@ -7,7 +7,7 @@ function handleImgLoaded() {
 }
 function setBgImg(imgNumber) {
     const img = new Image();
-    img.src = `images/${imgNumber + 1}.jpg`;
+    img.src = `${imgNumber + 1}.jpg`;
     img.addEventListener("load", handleImgLoaded);
     img.classList.add("bgImg")
     body.prepend(img);
